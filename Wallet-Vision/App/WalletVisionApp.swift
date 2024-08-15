@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Wallet_VisionApp: App {
+struct WalletVisionApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

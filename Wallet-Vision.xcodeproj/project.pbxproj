@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		996EC4CA2C6E2404008A75EA /* Wallet_VisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC4C92C6E2404008A75EA /* Wallet_VisionApp.swift */; };
+		996EC4CA2C6E2404008A75EA /* WalletVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC4C92C6E2404008A75EA /* WalletVisionApp.swift */; };
 		996EC4CC2C6E2404008A75EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC4CB2C6E2404008A75EA /* ContentView.swift */; };
 		996EC4CE2C6E2406008A75EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996EC4CD2C6E2406008A75EA /* Assets.xcassets */; };
 		996EC4D12C6E2406008A75EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996EC4D02C6E2406008A75EA /* Preview Assets.xcassets */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		996EC4C62C6E2404008A75EA /* Wallet-Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallet-Vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		996EC4C92C6E2404008A75EA /* Wallet_VisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_VisionApp.swift; sourceTree = "<group>"; };
+		996EC4C92C6E2404008A75EA /* WalletVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVisionApp.swift; sourceTree = "<group>"; };
 		996EC4CB2C6E2404008A75EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		996EC4CD2C6E2406008A75EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996EC4D02C6E2406008A75EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +44,7 @@
 		996EC4E02C6E2406008A75EA /* Wallet-VisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallet-VisionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996EC4E42C6E2406008A75EA /* Wallet_VisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_VisionUITests.swift; sourceTree = "<group>"; };
 		996EC4E62C6E2406008A75EA /* Wallet_VisionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_VisionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		996EC4F32C6E2430008A75EA /* Wallet-Vision.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wallet-Vision.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +95,13 @@
 		996EC4C82C6E2404008A75EA /* Wallet-Vision */ = {
 			isa = PBXGroup;
 			children = (
-				996EC4C92C6E2404008A75EA /* Wallet_VisionApp.swift */,
+				996EC4F52C6E24A6008A75EA /* DI */,
+				996EC4F42C6E24A0008A75EA /* App */,
+				996EC4F62C6E24AA008A75EA /* Core */,
+				996EC4F72C6E24B3008A75EA /* Feature */,
 				996EC4CB2C6E2404008A75EA /* ContentView.swift */,
 				996EC4CD2C6E2406008A75EA /* Assets.xcassets */,
+				996EC4F32C6E2430008A75EA /* Wallet-Vision.entitlements */,
 				996EC4CF2C6E2406008A75EA /* Preview Content */,
 			);
 			path = "Wallet-Vision";
@@ -125,6 +130,35 @@
 				996EC4E62C6E2406008A75EA /* Wallet_VisionUITestsLaunchTests.swift */,
 			);
 			path = "Wallet-VisionUITests";
+			sourceTree = "<group>";
+		};
+		996EC4F42C6E24A0008A75EA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				996EC4C92C6E2404008A75EA /* WalletVisionApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		996EC4F52C6E24A6008A75EA /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		996EC4F62C6E24AA008A75EA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		996EC4F72C6E24B3008A75EA /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				996EC4CC2C6E2404008A75EA /* ContentView.swift in Sources */,
-				996EC4CA2C6E2404008A75EA /* Wallet_VisionApp.swift in Sources */,
+				996EC4CA2C6E2404008A75EA /* WalletVisionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wallet-Vision/Wallet-Vision.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wallet-Vision/Preview Content\"";
@@ -448,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wallet-Vision/Wallet-Vision.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wallet-Vision/Preview Content\"";
