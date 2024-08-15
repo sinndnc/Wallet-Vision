@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct WalletVisionApp: App {
+    
+    @UIApplicationDelegateAdaptor(WalletVisionAppDelegate.self) private var delegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                SplashView()
+                    .navigationDestination(
+                        isPresented: .constant(true)
+                    ) {
+                        RootView()
+                    }
+            }
         }
     }
 }

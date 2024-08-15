@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		991868382C6E4CCD0029B128 /* NFCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991868372C6E4CCD0029B128 /* NFCService.swift */; };
+		9918683A2C6E4CEC0029B128 /* DIPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991868392C6E4CEC0029B128 /* DIPropertyWrapper.swift */; };
+		9918683C2C6E4D150029B128 /* DIInjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918683B2C6E4D150029B128 /* DIInjectType.swift */; };
+		9918683E2C6E4D430029B128 /* DIInjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918683D2C6E4D430029B128 /* DIInjectContainer.swift */; };
+		991868402C6E4E020029B128 /* NFCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918683F2C6E4E020029B128 /* NFCServiceProtocol.swift */; };
+		991868422C6E4F050029B128 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991868412C6E4F050029B128 /* RootViewModel.swift */; };
+		991868452C6E4F8E0029B128 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991868442C6E4F8E0029B128 /* HomeViewModel.swift */; };
+		991868472C6E4FA30029B128 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991868462C6E4FA30029B128 /* WalletViewModel.swift */; };
 		996EC4CA2C6E2404008A75EA /* WalletVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC4C92C6E2404008A75EA /* WalletVisionApp.swift */; };
-		996EC4CC2C6E2404008A75EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC4CB2C6E2404008A75EA /* ContentView.swift */; };
 		996EC4CE2C6E2406008A75EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996EC4CD2C6E2406008A75EA /* Assets.xcassets */; };
 		996EC4D12C6E2406008A75EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996EC4D02C6E2406008A75EA /* Preview Assets.xcassets */; };
 		996EC4DB2C6E2406008A75EA /* Wallet_VisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC4DA2C6E2406008A75EA /* Wallet_VisionTests.swift */; };
 		996EC4E52C6E2406008A75EA /* Wallet_VisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC4E42C6E2406008A75EA /* Wallet_VisionUITests.swift */; };
 		996EC4E72C6E2406008A75EA /* Wallet_VisionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC4E62C6E2406008A75EA /* Wallet_VisionUITestsLaunchTests.swift */; };
+		996EC5022C6E46FF008A75EA /* OnBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC5012C6E46FF008A75EA /* OnBoardView.swift */; };
+		996EC5052C6E4712008A75EA /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC5042C6E4712008A75EA /* SplashView.swift */; };
+		996EC5082C6E4735008A75EA /* WalletVisionAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC5072C6E4735008A75EA /* WalletVisionAppDelegate.swift */; };
+		996EC50B2C6E487C008A75EA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC50A2C6E487C008A75EA /* RootView.swift */; };
+		996EC5102C6E49D8008A75EA /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC50F2C6E49D8008A75EA /* WalletView.swift */; };
+		996EC5122C6E49E2008A75EA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC5112C6E49E2008A75EA /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		991868372C6E4CCD0029B128 /* NFCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCService.swift; sourceTree = "<group>"; };
+		991868392C6E4CEC0029B128 /* DIPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIPropertyWrapper.swift; sourceTree = "<group>"; };
+		9918683B2C6E4D150029B128 /* DIInjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIInjectType.swift; sourceTree = "<group>"; };
+		9918683D2C6E4D430029B128 /* DIInjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIInjectContainer.swift; sourceTree = "<group>"; };
+		9918683F2C6E4E020029B128 /* NFCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCServiceProtocol.swift; sourceTree = "<group>"; };
+		991868412C6E4F050029B128 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		991868442C6E4F8E0029B128 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		991868462C6E4FA30029B128 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
 		996EC4C62C6E2404008A75EA /* Wallet-Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallet-Vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996EC4C92C6E2404008A75EA /* WalletVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVisionApp.swift; sourceTree = "<group>"; };
-		996EC4CB2C6E2404008A75EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		996EC4CD2C6E2406008A75EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996EC4D02C6E2406008A75EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		996EC4D62C6E2406008A75EA /* Wallet-VisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallet-VisionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +65,12 @@
 		996EC4E42C6E2406008A75EA /* Wallet_VisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_VisionUITests.swift; sourceTree = "<group>"; };
 		996EC4E62C6E2406008A75EA /* Wallet_VisionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_VisionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		996EC4F32C6E2430008A75EA /* Wallet-Vision.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wallet-Vision.entitlements"; sourceTree = "<group>"; };
+		996EC5012C6E46FF008A75EA /* OnBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardView.swift; sourceTree = "<group>"; };
+		996EC5042C6E4712008A75EA /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		996EC5072C6E4735008A75EA /* WalletVisionAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVisionAppDelegate.swift; sourceTree = "<group>"; };
+		996EC50A2C6E487C008A75EA /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		996EC50F2C6E49D8008A75EA /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		996EC5112C6E49E2008A75EA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +98,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		991868312C6E4C7B0029B128 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		991868322C6E4C800029B128 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		991868332C6E4C9E0029B128 /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				991868372C6E4CCD0029B128 /* NFCService.swift */,
+				9918683F2C6E4E020029B128 /* NFCServiceProtocol.swift */,
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
+		991868342C6E4CA10029B128 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		991868432C6E4F080029B128 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		996EC4BD2C6E2404008A75EA = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +162,9 @@
 				996EC4F42C6E24A0008A75EA /* App */,
 				996EC4F62C6E24AA008A75EA /* Core */,
 				996EC4F72C6E24B3008A75EA /* Feature */,
-				996EC4CB2C6E2404008A75EA /* ContentView.swift */,
+				996EC4CF2C6E2406008A75EA /* Preview Content */,
 				996EC4CD2C6E2406008A75EA /* Assets.xcassets */,
 				996EC4F32C6E2430008A75EA /* Wallet-Vision.entitlements */,
-				996EC4CF2C6E2406008A75EA /* Preview Content */,
 			);
 			path = "Wallet-Vision";
 			sourceTree = "<group>";
@@ -136,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				996EC4C92C6E2404008A75EA /* WalletVisionApp.swift */,
+				996EC5072C6E4735008A75EA /* WalletVisionAppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -143,6 +206,9 @@
 		996EC4F52C6E24A6008A75EA /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				9918683B2C6E4D150029B128 /* DIInjectType.swift */,
+				9918683D2C6E4D430029B128 /* DIInjectContainer.swift */,
+				991868392C6E4CEC0029B128 /* DIPropertyWrapper.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -150,6 +216,11 @@
 		996EC4F62C6E24AA008A75EA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				996EC4FD2C6E24EF008A75EA /* Utils */,
+				996EC4FB2C6E24E3008A75EA /* Data */,
+				996EC4FC2C6E24E7008A75EA /* Domain */,
+				996EC4FE2C6E24F4008A75EA /* Constants */,
+				996EC4FF2C6E2503008A75EA /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -157,8 +228,128 @@
 		996EC4F72C6E24B3008A75EA /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				996EC4F92C6E24D4008A75EA /* Utils */,
+				996EC4FA2C6E24D8008A75EA /* Extensions */,
+				996EC4F82C6E24D0008A75EA /* Presentation */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		996EC4F82C6E24D0008A75EA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				996EC5032C6E470A008A75EA /* Splash */,
+				996EC5002C6E46CA008A75EA /* OnBoard */,
+				996EC5062C6E471C008A75EA /* Authenticate */,
+				996EC5092C6E483E008A75EA /* Root */,
+				996EC50D2C6E49AF008A75EA /* Home */,
+				996EC50E2C6E49C6008A75EA /* Wallet */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		996EC4F92C6E24D4008A75EA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				991868432C6E4F080029B128 /* Entities */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		996EC4FA2C6E24D8008A75EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		996EC4FB2C6E24E3008A75EA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		996EC4FC2C6E24E7008A75EA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		996EC4FD2C6E24EF008A75EA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				991868342C6E4CA10029B128 /* QR */,
+				991868332C6E4C9E0029B128 /* NFC */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		996EC4FE2C6E24F4008A75EA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		996EC4FF2C6E2503008A75EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		996EC5002C6E46CA008A75EA /* OnBoard */ = {
+			isa = PBXGroup;
+			children = (
+				996EC5012C6E46FF008A75EA /* OnBoardView.swift */,
+			);
+			path = OnBoard;
+			sourceTree = "<group>";
+		};
+		996EC5032C6E470A008A75EA /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				996EC5042C6E4712008A75EA /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		996EC5062C6E471C008A75EA /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		996EC5092C6E483E008A75EA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				996EC50A2C6E487C008A75EA /* RootView.swift */,
+				991868412C6E4F050029B128 /* RootViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		996EC50D2C6E49AF008A75EA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				991868322C6E4C800029B128 /* Component */,
+				996EC5112C6E49E2008A75EA /* HomeView.swift */,
+				991868442C6E4F8E0029B128 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		996EC50E2C6E49C6008A75EA /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				991868312C6E4C7B0029B128 /* Component */,
+				996EC50F2C6E49D8008A75EA /* WalletView.swift */,
+				991868462C6E4FA30029B128 /* WalletViewModel.swift */,
+			);
+			path = Wallet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +482,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				996EC4CC2C6E2404008A75EA /* ContentView.swift in Sources */,
+				996EC5052C6E4712008A75EA /* SplashView.swift in Sources */,
+				9918683A2C6E4CEC0029B128 /* DIPropertyWrapper.swift in Sources */,
+				991868422C6E4F050029B128 /* RootViewModel.swift in Sources */,
+				996EC5122C6E49E2008A75EA /* HomeView.swift in Sources */,
 				996EC4CA2C6E2404008A75EA /* WalletVisionApp.swift in Sources */,
+				991868382C6E4CCD0029B128 /* NFCService.swift in Sources */,
+				996EC5022C6E46FF008A75EA /* OnBoardView.swift in Sources */,
+				9918683C2C6E4D150029B128 /* DIInjectType.swift in Sources */,
+				996EC5082C6E4735008A75EA /* WalletVisionAppDelegate.swift in Sources */,
+				991868452C6E4F8E0029B128 /* HomeViewModel.swift in Sources */,
+				996EC50B2C6E487C008A75EA /* RootView.swift in Sources */,
+				991868402C6E4E020029B128 /* NFCServiceProtocol.swift in Sources */,
+				991868472C6E4FA30029B128 /* WalletViewModel.swift in Sources */,
+				996EC5102C6E49D8008A75EA /* WalletView.swift in Sources */,
+				9918683E2C6E4D430029B128 /* DIInjectContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +664,7 @@
 				DEVELOPMENT_TEAM = A5PNFW5LM9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "We need access to NFC to read tags.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +695,7 @@
 				DEVELOPMENT_TEAM = A5PNFW5LM9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "We need access to NFC to read tags.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
