@@ -13,14 +13,10 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack{
-            VStack{
-                Button(action: {
-                    viewModel.nfcService.beginScanning()
-                }, label: {
-                    Text("Button")
-                })
-                .navigationTitle("Home")
+            GeometryReader{geo in
+                
             }
+            .navigationTitle("Home")
         }
     }
 }

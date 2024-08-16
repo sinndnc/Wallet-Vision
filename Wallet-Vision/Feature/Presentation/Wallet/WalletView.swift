@@ -14,8 +14,13 @@ struct WalletView: View {
     
     var body: some View {
         NavigationStack{
-            VStack{
-                Text("Wallet View")
+            GeometryReader{baseGeo in
+                ScrollView{
+                    VStack{
+                        WalletComponent(baseGeo: baseGeo)
+                        PortfolioComponent(baseGeo: baseGeo)
+                    }
+                }
             }
             .navigationTitle("Wallet")
         }

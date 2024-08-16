@@ -27,6 +27,19 @@
 		996EC50B2C6E487C008A75EA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC50A2C6E487C008A75EA /* RootView.swift */; };
 		996EC5102C6E49D8008A75EA /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC50F2C6E49D8008A75EA /* WalletView.swift */; };
 		996EC5122C6E49E2008A75EA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC5112C6E49E2008A75EA /* HomeView.swift */; };
+		99D2ED242C6F9AA20066E137 /* WalletComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED232C6F9AA20066E137 /* WalletComponent.swift */; };
+		99D2ED272C6F9AC90066E137 /* WalletHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED262C6F9AC90066E137 /* WalletHeaderComponent.swift */; };
+		99D2ED2A2C6F9EB20066E137 /* WalletBodyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED292C6F9EB20066E137 /* WalletBodyComponent.swift */; };
+		99D2ED2C2C6FA2E90066E137 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED2B2C6FA2E90066E137 /* Preferences.swift */; };
+		99D2ED2E2C6FA9B70066E137 /* WalletBottomComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED2D2C6FA9B70066E137 /* WalletBottomComponent.swift */; };
+		99D2ED312C6FD20A0066E137 /* PortfolioComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED302C6FD20A0066E137 /* PortfolioComponent.swift */; };
+		99D2ED362C6FD8950066E137 /* PortfolioCryptoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED352C6FD8950066E137 /* PortfolioCryptoComponent.swift */; };
+		99D2ED392C6FD8BF0066E137 /* PortfolioCryptoItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED382C6FD8BF0066E137 /* PortfolioCryptoItemComponent.swift */; };
+		99D2ED3C2C6FDF2D0066E137 /* PortfolioNFTComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED3B2C6FDF2D0066E137 /* PortfolioNFTComponent.swift */; };
+		99D2ED3E2C6FE02B0066E137 /* PortfolioNFTItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D2ED3D2C6FE02B0066E137 /* PortfolioNFTItemComponent.swift */; };
+		99F3F4E62C6E601300AEF445 /* FaceIDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3F4E52C6E601300AEF445 /* FaceIDService.swift */; };
+		99F3F4E82C6E601C00AEF445 /* FaceIDServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3F4E72C6E601C00AEF445 /* FaceIDServiceProtocol.swift */; };
+		99F3F4EA2C6E704600AEF445 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3F4E92C6E704600AEF445 /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +84,19 @@
 		996EC50A2C6E487C008A75EA /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		996EC50F2C6E49D8008A75EA /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		996EC5112C6E49E2008A75EA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		99D2ED232C6F9AA20066E137 /* WalletComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletComponent.swift; sourceTree = "<group>"; };
+		99D2ED262C6F9AC90066E137 /* WalletHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletHeaderComponent.swift; sourceTree = "<group>"; };
+		99D2ED292C6F9EB20066E137 /* WalletBodyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBodyComponent.swift; sourceTree = "<group>"; };
+		99D2ED2B2C6FA2E90066E137 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		99D2ED2D2C6FA9B70066E137 /* WalletBottomComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBottomComponent.swift; sourceTree = "<group>"; };
+		99D2ED302C6FD20A0066E137 /* PortfolioComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioComponent.swift; sourceTree = "<group>"; };
+		99D2ED352C6FD8950066E137 /* PortfolioCryptoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PortfolioCryptoComponent.swift; path = ../PortfolioCryptoComponent.swift; sourceTree = "<group>"; };
+		99D2ED382C6FD8BF0066E137 /* PortfolioCryptoItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCryptoItemComponent.swift; sourceTree = "<group>"; };
+		99D2ED3B2C6FDF2D0066E137 /* PortfolioNFTComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioNFTComponent.swift; sourceTree = "<group>"; };
+		99D2ED3D2C6FE02B0066E137 /* PortfolioNFTItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioNFTItemComponent.swift; sourceTree = "<group>"; };
+		99F3F4E52C6E601300AEF445 /* FaceIDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDService.swift; sourceTree = "<group>"; };
+		99F3F4E72C6E601C00AEF445 /* FaceIDServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDServiceProtocol.swift; sourceTree = "<group>"; };
+		99F3F4E92C6E704600AEF445 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +127,8 @@
 		991868312C6E4C7B0029B128 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				99D2ED252C6F9ABC0066E137 /* Wallet */,
+				99D2ED2F2C6FD1E50066E137 /* Portfolio */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -282,6 +310,7 @@
 			children = (
 				991868342C6E4CA10029B128 /* QR */,
 				991868332C6E4C9E0029B128 /* NFC */,
+				99F3F4E42C6E5F4B00AEF445 /* FaceID */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -289,6 +318,7 @@
 		996EC4FE2C6E24F4008A75EA /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				99D2ED2B2C6FA2E90066E137 /* Preferences.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -312,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				996EC5042C6E4712008A75EA /* SplashView.swift */,
+				99F3F4E92C6E704600AEF445 /* SplashViewModel.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -350,6 +381,70 @@
 				991868462C6E4FA30029B128 /* WalletViewModel.swift */,
 			);
 			path = Wallet;
+			sourceTree = "<group>";
+		};
+		99D2ED252C6F9ABC0066E137 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				99D2ED282C6F9EA40066E137 /* Component */,
+				99D2ED232C6F9AA20066E137 /* WalletComponent.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		99D2ED282C6F9EA40066E137 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				99D2ED262C6F9AC90066E137 /* WalletHeaderComponent.swift */,
+				99D2ED292C6F9EB20066E137 /* WalletBodyComponent.swift */,
+				99D2ED2D2C6FA9B70066E137 /* WalletBottomComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		99D2ED2F2C6FD1E50066E137 /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				99D2ED322C6FD2BB0066E137 /* Component */,
+				99D2ED302C6FD20A0066E137 /* PortfolioComponent.swift */,
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		99D2ED322C6FD2BB0066E137 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				99D2ED3A2C6FDF1C0066E137 /* NFT */,
+				99D2ED372C6FD8A30066E137 /* Crypto */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		99D2ED372C6FD8A30066E137 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				99D2ED352C6FD8950066E137 /* PortfolioCryptoComponent.swift */,
+				99D2ED382C6FD8BF0066E137 /* PortfolioCryptoItemComponent.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		99D2ED3A2C6FDF1C0066E137 /* NFT */ = {
+			isa = PBXGroup;
+			children = (
+				99D2ED3B2C6FDF2D0066E137 /* PortfolioNFTComponent.swift */,
+				99D2ED3D2C6FE02B0066E137 /* PortfolioNFTItemComponent.swift */,
+			);
+			path = NFT;
+			sourceTree = "<group>";
+		};
+		99F3F4E42C6E5F4B00AEF445 /* FaceID */ = {
+			isa = PBXGroup;
+			children = (
+				99F3F4E52C6E601300AEF445 /* FaceIDService.swift */,
+				99F3F4E72C6E601C00AEF445 /* FaceIDServiceProtocol.swift */,
+			);
+			path = FaceID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,18 +579,31 @@
 			files = (
 				996EC5052C6E4712008A75EA /* SplashView.swift in Sources */,
 				9918683A2C6E4CEC0029B128 /* DIPropertyWrapper.swift in Sources */,
+				99D2ED3C2C6FDF2D0066E137 /* PortfolioNFTComponent.swift in Sources */,
 				991868422C6E4F050029B128 /* RootViewModel.swift in Sources */,
+				99F3F4EA2C6E704600AEF445 /* SplashViewModel.swift in Sources */,
+				99D2ED312C6FD20A0066E137 /* PortfolioComponent.swift in Sources */,
 				996EC5122C6E49E2008A75EA /* HomeView.swift in Sources */,
 				996EC4CA2C6E2404008A75EA /* WalletVisionApp.swift in Sources */,
 				991868382C6E4CCD0029B128 /* NFCService.swift in Sources */,
+				99D2ED272C6F9AC90066E137 /* WalletHeaderComponent.swift in Sources */,
 				996EC5022C6E46FF008A75EA /* OnBoardView.swift in Sources */,
 				9918683C2C6E4D150029B128 /* DIInjectType.swift in Sources */,
 				996EC5082C6E4735008A75EA /* WalletVisionAppDelegate.swift in Sources */,
 				991868452C6E4F8E0029B128 /* HomeViewModel.swift in Sources */,
 				996EC50B2C6E487C008A75EA /* RootView.swift in Sources */,
+				99D2ED242C6F9AA20066E137 /* WalletComponent.swift in Sources */,
+				99F3F4E62C6E601300AEF445 /* FaceIDService.swift in Sources */,
 				991868402C6E4E020029B128 /* NFCServiceProtocol.swift in Sources */,
 				991868472C6E4FA30029B128 /* WalletViewModel.swift in Sources */,
+				99F3F4E82C6E601C00AEF445 /* FaceIDServiceProtocol.swift in Sources */,
+				99D2ED362C6FD8950066E137 /* PortfolioCryptoComponent.swift in Sources */,
+				99D2ED2C2C6FA2E90066E137 /* Preferences.swift in Sources */,
+				99D2ED2A2C6F9EB20066E137 /* WalletBodyComponent.swift in Sources */,
+				99D2ED2E2C6FA9B70066E137 /* WalletBottomComponent.swift in Sources */,
 				996EC5102C6E49D8008A75EA /* WalletView.swift in Sources */,
+				99D2ED392C6FD8BF0066E137 /* PortfolioCryptoItemComponent.swift in Sources */,
+				99D2ED3E2C6FE02B0066E137 /* PortfolioNFTItemComponent.swift in Sources */,
 				9918683E2C6E4D430029B128 /* DIInjectContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +773,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "We need access to NFC to read tags.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We use Face ID to authenticate your access to secure features.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -696,6 +805,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "We need access to NFC to read tags.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We use Face ID to authenticate your access to secure features.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

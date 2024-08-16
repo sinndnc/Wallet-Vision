@@ -14,14 +14,7 @@ struct WalletVisionApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack{
-                SplashView()
-                    .navigationDestination(
-                        isPresented: .constant(true)
-                    ) {
-                        RootView()
-                    }
-            }
+            SplashView()
         }
     }
 }

@@ -16,13 +16,12 @@ final class WalletVisionAppDelegate : NSObject, UIApplicationDelegate {
         
         return true
     }
-    
 }
-
 
 fileprivate extension WalletVisionAppDelegate{
     
     func setupDIDependencies() {
         DIInjectContainer.register(type: NFCServiceProtocol.self , NFCService())
+        DIInjectContainer.register(type: FaceIDServiceProtocol.self , FaceIDService())
     }
 }

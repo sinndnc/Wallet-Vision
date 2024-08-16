@@ -11,4 +11,6 @@ final class HomeViewModel : ObservableObject {
     
     @Inject var nfcService : NFCServiceProtocol
     
+    @Inject var faceId : FaceIDServiceProtocol 
+    
 }

@@ -19,7 +19,7 @@ struct RootView: View {
             HomeView(viewModel: HomeViewModel())
                 .tabview(tag: .home, text: "Home", image: "house")
             WalletView(viewModel: WalletViewModel())
-                .tabview(tag: .home, text: "Wallet", image: "house")
+                .tabview(tag: .wallet, text: "Wallet", image: "wallet.pass")
         }
         .navigationBarBackButtonHidden()
     }
@@ -59,7 +59,5 @@ fileprivate struct tabViewModifier : ViewModifier {
 
 
 #Preview {
-    NavigationStack{
-        RootView()
-    }
+    RootView()
 }
