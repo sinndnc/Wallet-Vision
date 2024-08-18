@@ -23,25 +23,20 @@ struct WalletBodyComponent: View {
         VStack(alignment: .leading) {
             HStack {
                 ForEach(Tab.allCases,id: \.self){ item in
-                    VStack(spacing:2){
-                        Button(
-                            action: {
-                                withAnimation(.spring) {
-                                    selectedTab = item
-                                }
-                            }, label: {
-                                Text(item.rawValue)
-                                    .fontWeight(.medium)
+                    VStack(spacing:5){
+                        ButtonWithHapticFeedback {
+                            withAnimation(.spring) {
+                                selectedTab = item
                             }
-                        )
+                        } label: {
+                            Text(item.rawValue)
+                                .fontWeight(.medium)
+                        }
                         .tint(.white)
                         
                         if(selectedTab == item){
                             Rectangle()
-                                .frame(
-                                    width: 30,
-                                    height: 1
-                                )
+                                .frame(width: 30,height: 2)
                         }
                     }
                 }

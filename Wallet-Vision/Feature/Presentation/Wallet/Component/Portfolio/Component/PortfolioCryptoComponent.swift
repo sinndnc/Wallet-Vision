@@ -9,21 +9,27 @@ import SwiftUI
 
 struct PortfolioCryptoComponent: View {
         
+    let isHidedbalance : Bool
+    
     var body: some View {
         VStack{
-            PortfolioCryptoItemComponent()
-            PortfolioCryptoItemComponent()
-            PortfolioCryptoItemComponent()
-            PortfolioCryptoItemComponent()
-            PortfolioCryptoItemComponent()
-            PortfolioCryptoItemComponent()
+            PortfolioCryptoItemComponent(isHidedbalance:isHidedbalance)
+            PortfolioCryptoItemComponent(isHidedbalance:isHidedbalance)
+            PortfolioCryptoItemComponent(isHidedbalance:isHidedbalance)
+            PortfolioCryptoItemComponent(isHidedbalance:isHidedbalance)
+            PortfolioCryptoItemComponent(isHidedbalance:isHidedbalance)
+            PortfolioCryptoItemComponent(isHidedbalance:isHidedbalance)
+            PortfolioCryptoItemComponent(isHidedbalance:isHidedbalance)
+            PortfolioCryptoItemComponent(isHidedbalance:isHidedbalance)
         }
-        .padding()
+        .padding(.vertical)
     }
 }
 
 #Preview {
     GeometryReader(content: { geometry in
-        PortfolioCryptoComponent()
+        PortfolioCryptoComponent(
+            isHidedbalance: .random()
+        )
     })
 }

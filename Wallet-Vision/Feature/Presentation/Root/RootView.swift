@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-fileprivate enum TabEnum { case home ; case wallet }
+fileprivate enum TabEnum { case home ; case wallet ; case transfer}
 
 struct RootView: View {
     
@@ -18,6 +18,8 @@ struct RootView: View {
         TabView(selection: $selectedTab){
             HomeView(viewModel: HomeViewModel())
                 .tabview(tag: .home, text: "Home", image: "house")
+            BrowserView(viewModel: BrowserViewModel())
+                .tabview(tag: .transfer, text: "Browser", image: "globe")
             WalletView(viewModel: WalletViewModel())
                 .tabview(tag: .wallet, text: "Wallet", image: "wallet.pass")
         }
@@ -33,7 +35,9 @@ fileprivate extension View {
 
 fileprivate extension RootView {
     private func tabSelection() -> Binding<TabEnum> {
-        Binding { self.selectedTab }
+        Binding {
+            return self.selectedTab
+        }
         set: { tappedTab in
             if tappedTab == self.selectedTab {}
             self.selectedTab = tappedTab

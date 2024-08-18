@@ -30,6 +30,7 @@ fileprivate struct PortfolioTabComponent: View {
 struct PortfolioComponent: View {
     
     let baseGeo : GeometryProxy
+    let isHidedbalance : Bool
     @State private var selection : Tab = .Crypto
 
     var body: some View {
@@ -39,7 +40,7 @@ struct PortfolioComponent: View {
             case .NFTs:
                 PortfolioNFTComponent()
             case .Crypto:
-                PortfolioCryptoComponent()
+                PortfolioCryptoComponent(isHidedbalance:isHidedbalance)
             }
         }
         .padding(.horizontal)
@@ -48,6 +49,9 @@ struct PortfolioComponent: View {
 
 #Preview {
     GeometryReader(content: { geometry in
-        PortfolioComponent(baseGeo: geometry)
+        PortfolioComponent(
+            baseGeo: geometry,
+            isHidedbalance: .random()
+        )
     })
 }

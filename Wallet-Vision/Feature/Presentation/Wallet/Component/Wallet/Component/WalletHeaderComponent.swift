@@ -25,13 +25,13 @@ struct WalletHeaderComponent: View {
                 .truncationMode(.middle)
                 .blur(radius: isHidedBalance ? 5 : 0)
                 .frame(width: childGeo.size.width * 0.75)
-            Button(
-                action: {
-                
-            }, label: {
+            
+            ButtonWithHapticFeedback {
+                UIPasteboard.general.string = testAdress
+            } label: {
                 Image(systemName: "doc.on.doc.fill")
                     .font(.caption)
-            })
+            }
             .tint(.white)
         }
         .padding()

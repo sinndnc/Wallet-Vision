@@ -9,10 +9,12 @@ import SwiftUI
 
 struct OnBoardView: View {
     var body: some View {
-        VStack{
-            Text("Hello, World!")
+        NavigationStack{
+            VStack{
+                Text("Hello, World!")
+            }
+            .navigationTitle("OnBoard")
         }
-        .navigationTitle("OnBoard")
     }
 }
 

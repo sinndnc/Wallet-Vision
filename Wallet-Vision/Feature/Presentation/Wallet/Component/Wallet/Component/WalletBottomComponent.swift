@@ -7,45 +7,54 @@
 
 import SwiftUI
 
-fileprivate struct Option : Hashable {
-    let label : String
-    let systemName : String
+ enum Option {
+    case receive
+    case send
+    case swap
+    case buyAndSell
 }
 
-fileprivate struct Options{
-    
-    static let send = Option(label: "Send", systemName: "arrow.up")
-    static let receive = Option(label: "Receive", systemName: "arrow.down")
-    static let swap = Option(label: "Swap", systemName: "arrow.left.arrow.right")
-    static let buyAndSell = Option(label: "buy & Sell", systemName: "cart.badge.plus")
+ struct Model : Hashable {
+    var tag : Option
+    var label : String
+    var systemName : String
 }
-
 
 struct WalletBottomComponent: View {
     
     let childGeo : GeometryProxy
     let isHidedBalance : Bool
     
-    private let options : [Option] = [Options.send,Options.receive,Options.swap,Options.buyAndSell,]
+    @State var isPresented : Bool = false
+    @State var selectedItem : Option? = nil
+
+    @State var options = [
+        Model(tag:.send,label: "Send", systemName: "arrow.up"),
+        Model(tag:.receive,label: "Receive", systemName: "arrow.down"),
+        Model(tag:.swap,label: "Swap", systemName: "arrow.left.arrow.right"),
+        Model(tag:.buyAndSell,label: "buy & Sell", systemName: "cart.badge.plus")
+    ]
     
     var body: some View {
         HStack{
             ForEach(options,id: \.self){ option in
                 Spacer()
-                VStack{
-                    Button(action: {
-                        
-                    }, label: {
+                NavigationLink(
+                    value: option.tag
+                ) {
+                    VStack{
                         Image(systemName: option.systemName)
                             .padding(10)
                             .font(.subheadline)
                             .background(.white)
                             .fontWeight(.medium)
                             .clipShape(Circle())
-                    })
-                    Text(option.label)
-                        .font(.footnote)
-                        .fontWeight(.medium)
+                            .foregroundColor(.black)
+                        Text(option.label)
+                            .font(.footnote)
+                            .fontWeight(.medium)
+                            .foregroundStyle(.white)
+                    }
                 }
                 Spacer()
             }

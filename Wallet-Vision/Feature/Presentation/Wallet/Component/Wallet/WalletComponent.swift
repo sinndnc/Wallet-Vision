@@ -9,10 +9,8 @@ import SwiftUI
 
 struct WalletComponent: View {
     
-    
     let baseGeo : GeometryProxy
-    
-    @State private var isHidedBalance : Bool = false
+    @Binding var isHidedBalance : Bool
     
     private let colors : [Color] = [.blue,.cyan,.mint]
     
@@ -53,6 +51,9 @@ struct WalletComponent: View {
 
 #Preview {
     GeometryReader(content: { geometry in
-        WalletComponent(baseGeo: geometry)
+        WalletComponent(
+            baseGeo: geometry,
+            isHidedBalance: .constant(.random())
+        )
     })
 }

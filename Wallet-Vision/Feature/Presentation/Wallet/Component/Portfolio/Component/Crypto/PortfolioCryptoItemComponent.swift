@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PortfolioCryptoItemComponent: View {
+    
+    let isHidedbalance : Bool
+    
     var body: some View {
         HStack{
             Image(systemName: "bitcoinsign")
@@ -21,6 +24,7 @@ struct PortfolioCryptoItemComponent: View {
                     Text("0.352")
                         .font(.subheadline)
                         .fontWeight(.medium)
+                        .blur(radius: isHidedbalance ? 3 : 0)
                 }
                 HStack{
                     Text("$0.29")
@@ -36,6 +40,7 @@ struct PortfolioCryptoItemComponent: View {
                         .font(.footnote)
                         .fontWeight(.medium)
                         .foregroundStyle(.gray)
+                        .blur(radius: isHidedbalance ? 3 : 0)
                 }
             }
         }
@@ -44,5 +49,7 @@ struct PortfolioCryptoItemComponent: View {
 }
 
 #Preview {
-    PortfolioCryptoItemComponent()
+    PortfolioCryptoItemComponent(
+        isHidedbalance: .random()
+    )
 }
