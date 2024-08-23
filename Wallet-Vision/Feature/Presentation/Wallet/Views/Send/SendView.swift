@@ -11,24 +11,18 @@ struct SendView: View {
     
     var body: some View {
         GeometryReader{ baseGeo in
-            VStack{
+            VStack(alignment: .leading){
+                
                 BalanceComponent(baseGeo: baseGeo)
+                KeyboardComponent(baseGeo : baseGeo)
             }
         }
-        .navigationTitle("Send Crypto")
-        .toolbar{
-            ToolbarItem(
-                placement: .topBarTrailing
-            ) {
-                Button(
-                    action: {
-                        
-                    }, label: {
-                        Image(systemName:"qrcode")
-                    })
-                .tint(.white)
-            }
-        }
+        .padding(.bottom)
+        .safeAreaPadding()
+        .navigationTitle("Send")
+        .navigationBarTitleDisplayMode(.inline)
+        .searchable(text: .constant(""))
+        
     }
 }
 

@@ -14,7 +14,7 @@ struct WalletView: View {
 
     var body: some View {
         NavigationStack{
-            GeometryReader{baseGeo in
+            GeometryReader{ baseGeo in
                 ScrollView(showsIndicators: false){
                     VStack{
                         WalletComponent(
@@ -28,25 +28,52 @@ struct WalletView: View {
                     }
                 }
             }
+            .walletToolBar()
             .navigationTitle("Wallet")
-            .navigationDestination(
-                for: Option.self,
-                destination: { destination in
-                    switch destination{
-                    case .buyAndSell:
-                        BuyAndSellView()
-                    case .receive:
-                        ReceiveView()
-                    case .swap:
-                        SwapView()
-                    case .send:
-                        SendView()
-                    }
-                }
-            )
+            .walletNavigationDestination()
+            .searchable(text: .constant(""))
+           
         }
     }
 }
+
+fileprivate extension View {
+    
+    func walletNavigationDestination() -> some View {
+        navigationDestination(
+            for: Option.self,
+            destination: { destination in
+                switch destination{
+                case .buyAndSell:
+                    BuyAndSellView()
+                case .receive:
+                    ReceiveView()
+                case .swap:
+                    SwapView()
+                case .send:
+                    SendView()
+                }
+            }
+        )
+    }
+    
+    func walletToolBar() -> some View {
+        toolbar{
+            ToolbarItem(placement: .topBarTrailing) {
+                Button(
+                    action: {
+                    
+                    }, label: {
+                        Image(systemName: "gear")
+                    }
+                )
+                .tint(.white)
+            }
+        }
+    }
+    
+}
+
 
 #Preview {
     WalletView(viewModel: WalletViewModel())

@@ -14,14 +14,13 @@ struct BalanceComponent: View {
     var body: some View {
         VStack{
             HStack{
-                Button(
+                ButtonWithHapticFeedback(
                     action: {
                     
                 }, label: {
                     Image(systemName: "arrow.up.arrow.down")
                         .padding(10)
                         .font(.title2)
-                        .background(.gray)
                         .clipShape(Circle())
                 })
                 .tint(.white)
@@ -33,14 +32,13 @@ struct BalanceComponent: View {
                 
                 Spacer()
                 
-                Button(
+                ButtonWithHapticFeedback(
                     action: {
                     
                 }, label: {
                     Text("Max")
                         .padding(10)
-                        .font(.title3)
-                        .background(.gray)
+                        .font(.headline)
                         .clipShape(Circle())
                 })
                 .tint(.white)

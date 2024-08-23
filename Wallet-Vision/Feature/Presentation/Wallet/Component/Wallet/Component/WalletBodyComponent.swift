@@ -30,7 +30,8 @@ struct WalletBodyComponent: View {
                             }
                         } label: {
                             Text(item.rawValue)
-                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .fontWeight(.bold)
                         }
                         .tint(.white)
                         
@@ -48,7 +49,7 @@ struct WalletBodyComponent: View {
                     .fontWeight(.bold)
                     .blur(radius: isHidedBalance ? 6 : 0)
                 Spacer()
-                Button {
+                ButtonWithHapticFeedback {
                     withAnimation { isHidedBalance.toggle() }
                 } label: {
                     Image(systemName: isHidedBalance ? "eye.slash" : "eye")
