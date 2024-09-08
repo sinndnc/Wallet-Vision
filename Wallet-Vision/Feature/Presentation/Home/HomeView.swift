@@ -13,10 +13,9 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack{
-            GeometryReader{geo in
+            GeometryReader{ baseGeo in
                 
             }
-            .navigationTitle("Home")
         }
     }
 }

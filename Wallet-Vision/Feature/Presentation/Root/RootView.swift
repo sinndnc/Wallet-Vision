@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-fileprivate enum TabEnum { case home ; case wallet ; case transfer}
+fileprivate enum TabEnum { case home ; case card ; case portfolio ; case transfer}
 
 struct RootView: View {
     
-    @State private var selectedTab : TabEnum = .wallet
+    @State private var selectedTab : TabEnum = .home
     @StateObject private var viewModel : RootViewModel = RootViewModel()
     
     var body: some View {
@@ -20,10 +20,12 @@ struct RootView: View {
                 .tabview(tag: .home, text: "Home", image: "house")
             BrowserView(viewModel: BrowserViewModel())
                 .tabview(tag: .transfer, text: "Browser", image: "globe")
-            WalletView(viewModel: WalletViewModel())
-                .tabview(tag: .wallet, text: "Wallet", image: "wallet.pass")
+            CardView(viewModel: CardViewModel())
+                .tabview(tag: .card, text: "Card", image: "creditcard")
+            PortfolioView(viewModel: PortfolioViewModel())
+                .tabview(tag: .portfolio, text: "Portfolio", image: "briefcase")
         }
-        .navigationBarBackButtonHidden()
+        .navigationBarBackButtonHidden()        
     }
 }
 
@@ -55,7 +57,8 @@ fileprivate struct tabViewModifier : ViewModifier {
         content
             .tag(tag)
             .tabItem {
-                Label(LocalizedStringKey(text), systemImage: image)
+                Label { Text(text) } icon: { Image(systemName: image) }
+                    .font(.caption)
             }
     }
 }
