@@ -11,7 +11,7 @@ fileprivate enum TabEnum { case home ; case card ; case portfolio ; case transfe
 
 struct RootView: View {
     
-    @State private var selectedTab : TabEnum = .home
+    @State private var selectedTab : TabEnum = .portfolio
     @StateObject private var viewModel : RootViewModel = RootViewModel()
     
     var body: some View {

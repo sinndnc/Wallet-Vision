@@ -23,7 +23,8 @@ fileprivate extension WalletVisionAppDelegate{
     func setupDIDependencies() {
         DIInjectContainer.register(type: NFCServiceProtocol.self , NFCService())
         DIInjectContainer.register(type: FaceIDServiceProtocol.self , FaceIDService())
-        DIInjectContainer.register(type: EthereumServiceProtocol.self , EthereumService())
-        DIInjectContainer.register(type: EthereumServiceRepositoryProtocol.self , EthereumServiceRepository())
+        DIInjectContainer.register(type: EthereumRPCProviderProtocol.self , EthereumRPCProvider())
+        DIInjectContainer.register(type: EtherscanNetworkProviderProtocol.self , EtherscanNetworkProvider())
+        DIInjectContainer.register(type: EthereumProviderRepositoryProtocol.self , EthereumProviderRepository())
     }
 }

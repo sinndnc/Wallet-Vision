@@ -41,6 +41,8 @@ struct PortfolioView: View {
             }
         }
         .task {
+            await  viewModel.fetchTransactions()
+            await viewModel.sendTransfer()
             await viewModel.getWalletBalance()
         }
     }

@@ -33,7 +33,7 @@ struct SendSheetView: View {
                 ScrollView{
                     ForEach(Tokens.list,id: \.self){ token in
                         NavigationLink {
-                            SendView()
+                            SendView(token: token)
                         } label: {
                             SendItemComponent(token: token)
                         }
