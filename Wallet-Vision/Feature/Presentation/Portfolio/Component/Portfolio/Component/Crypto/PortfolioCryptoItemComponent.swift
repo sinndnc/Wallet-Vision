@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PortfolioCryptoItemComponent: View {
     
-    let token : Token
+    let token : TokenUI
     let isHidedBalance : Bool
     
     var body: some View {
@@ -27,7 +27,7 @@ struct PortfolioCryptoItemComponent: View {
                     Text(token.name)
                         .font(.subheadline)
                         .fontWeight(.semibold)
-                    Text("Ethereum")
+                    Text(token.longName)
                         .padding(3)
                         .font(.caption2)
                         .fontWeight(.medium)
@@ -35,7 +35,7 @@ struct PortfolioCryptoItemComponent: View {
                         .background(.gray.opacity(0.2))
                         .clipShape(RoundedRectangle(cornerRadius: 3))
                     Spacer()
-                    Text("$\(token.balance)")
+                    Text(String(token.amount.roundedToTwoDecimals()))
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .blur(radius: isHidedBalance ? 5 : 0)
@@ -51,7 +51,7 @@ struct PortfolioCryptoItemComponent: View {
                         .fontWeight(.semibold)
                         .foregroundStyle(.green)
                     Spacer()
-                    Text("$26.352.29")
+                    Text("$" + String(token.value.roundedToTwoDecimals()))
                         .font(.caption)
                         .fontWeight(.semibold)
                         .foregroundStyle(.gray)
@@ -65,7 +65,7 @@ struct PortfolioCryptoItemComponent: View {
 
 #Preview {
     PortfolioCryptoItemComponent(
-        token: Token(name: "USDC", symbol: "USDC", contractAddress: ""),
+        token: TokenUI(name: "ETH", symbol: "", network: TestNetworks.sepolia, longName: "", value: .zero, amount: .zero, UnitPrice: .zero),
         isHidedBalance: true
     )
 }

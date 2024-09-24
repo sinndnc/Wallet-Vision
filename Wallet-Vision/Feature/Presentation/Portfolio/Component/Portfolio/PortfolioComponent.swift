@@ -50,7 +50,7 @@ struct PortfolioComponent: View {
             PortfolioTabComponent(selection: $selection)
             switch selection {
             case .Crypto:
-                PortfolioCryptoComponent(isHidedBalance: viewModel.isHidedBalance)
+                PortfolioCryptoComponent(viewModel: viewModel)
             case .NFT:
                 PortfolioNFTComponent()
             }

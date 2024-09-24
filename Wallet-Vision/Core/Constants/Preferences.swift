@@ -7,8 +7,9 @@
 
 import Foundation
 
-enum Preferences : String{
-    case theme = "Theme"
-    case language = "Language"
-    case isHidedBalance = "IsHidedBalance"
+struct Preferences{
+    static let theme = "Theme"
+    static let language = "Language"
+    static let activeNetwork = "activeNetwork"
+    static let isHidedBalance = "IsHidedBalance"
 }

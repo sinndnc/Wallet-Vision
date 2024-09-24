@@ -22,7 +22,7 @@ struct RootView: View {
                 .tabview(tag: .transfer, text: "Browser", image: "globe")
             CardView(viewModel: CardViewModel())
                 .tabview(tag: .card, text: "Card", image: "creditcard")
-            PortfolioView(viewModel: PortfolioViewModel())
+            PortfolioView()
                 .tabview(tag: .portfolio, text: "Portfolio", image: "briefcase")
         }
         .navigationBarBackButtonHidden()        

@@ -7,7 +7,11 @@
 
 import Foundation
 
-enum Network : String{
-    case allNetworks = "All Networks"
-    case ethereum = "Ethereum"
+
+struct Network : Hashable , Codable {
+    let name: String
+    let connectionName: String
+    let chainID: Int
+    let isTestnet: Bool
 }
+

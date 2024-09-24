@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 final class WalletVisionAppDelegate : NSObject, UIApplicationDelegate {
         
@@ -23,8 +24,8 @@ fileprivate extension WalletVisionAppDelegate{
     func setupDIDependencies() {
         DIInjectContainer.register(type: NFCServiceProtocol.self , NFCService())
         DIInjectContainer.register(type: FaceIDServiceProtocol.self , FaceIDService())
-        DIInjectContainer.register(type: EthereumRPCProviderProtocol.self , EthereumRPCProvider())
+//        DIInjectContainer.register(type: InfuraRPCProviderProtocol.self , InfuraRPCProvider())
         DIInjectContainer.register(type: EtherscanNetworkProviderProtocol.self , EtherscanNetworkProvider())
-        DIInjectContainer.register(type: EthereumProviderRepositoryProtocol.self , EthereumProviderRepository())
+//        DIInjectContainer.register(type: EthereumProviderRepositoryProtocol.self , EthereumProviderRepository())
     }
 }

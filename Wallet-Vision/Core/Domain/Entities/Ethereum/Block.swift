@@ -8,7 +8,7 @@
 import Foundation
 
 enum Block : String {
-    case earliest
-    case latest
+    case earliest = "earliest"
+    case latest = "latest"
 }
 

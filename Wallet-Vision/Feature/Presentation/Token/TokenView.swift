@@ -40,7 +40,7 @@ func generateDailyData(forLastMonths months: Int) -> [TokenGraphic] {
 
 struct TokenView: View {
     
-    let token : Token
+    let token : TokenUI
     
     var body: some View {
         NavigationStack{
@@ -70,6 +70,6 @@ struct TokenView: View {
 
 #Preview {
     GeometryReader(content: { geometry in
-        TokenView(token : Token(name: "BNB Chain",symbol: "BNB",contractAddress: ""))
+        TokenView(token : TokenUI(name: "ETH", symbol: "", network: TestNetworks.sepolia, longName: "", value: .zero, amount: .zero, UnitPrice: .zero))
     })
 }

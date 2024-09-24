@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Transaction: Decodable {
+struct Transaction: Decodable , Hashable {
     let blockNumber: String
     let timeStamp: String
     let hash: String

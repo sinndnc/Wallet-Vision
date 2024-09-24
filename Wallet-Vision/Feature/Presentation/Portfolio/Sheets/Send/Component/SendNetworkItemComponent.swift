@@ -7,29 +7,51 @@
 
 import SwiftUI
 
-//TODO: burası için network classı yapılacak ardından buraya eklenecek şimdilik elle girdim
 struct SendNetworkItemComponent: View {
     
-    @Binding var selectedNetwork : Network
-    @Environment(\.presentationMode) var presentationMode
-
+    @StateObject var viewModel : PortfolioViewModel
+    @Environment(\.presentationMode) private var presentationMode
+    
     var body: some View {
-        Button{
-            selectedNetwork = .ethereum
-            presentationMode.wrappedValue.dismiss()
-        }label: {
-            HStack{
-                Image("ETH")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(5)
-                    .background("ETH" == "ETH" ? .white : .clear)
-                    .clipShape(Circle())
-                    .foregroundStyle(.black)
-                    .frame(width: 40,height: 40)
-                Text("Ethereum")
-                    .fontWeight(.semibold)
-                Spacer()
+        VStack(alignment: .leading){
+            ForEach(MainNetworks.allCases,id: \.self){ network in
+                Button{
+                    viewModel.updateNetworkChannel(for: network)
+                    presentationMode.wrappedValue.dismiss()
+                }label: {
+                    HStack{
+                        Image(systemName: "globe")
+                            .resizable()
+                            .scaledToFit()
+                            .clipShape(Circle())
+                            .foregroundStyle(.black)
+                            .frame(width: 30,height:30)
+                        Text(network.name)
+                            .fontWeight(.medium)
+                        Spacer()
+                    }
+                }
+            }
+            Divider()
+            Text("Tesnets")
+                .font(.headline)
+            ForEach(TestNetworks.allCases,id: \.self){ network in
+                Button{
+                    viewModel.updateNetworkChannel(for: network)
+                    presentationMode.wrappedValue.dismiss()
+                }label: {
+                    HStack{
+                        Text(String(network.name.first!))
+                            .padding(10)
+                            .background(.pink)
+                            .clipShape(Circle())
+                            .fontWeight(.medium)
+                            .frame(width: 30,height:30)
+                        Text(network.name)
+                            .fontWeight(.medium)
+                        Spacer()
+                    }
+                }
             }
         }
         .tint(.white)
@@ -37,5 +59,5 @@ struct SendNetworkItemComponent: View {
 }
 
 #Preview {
-    SendNetworkItemComponent(selectedNetwork: .constant(.allNetworks))
+    SendNetworkItemComponent(viewModel: PortfolioViewModel())
 }

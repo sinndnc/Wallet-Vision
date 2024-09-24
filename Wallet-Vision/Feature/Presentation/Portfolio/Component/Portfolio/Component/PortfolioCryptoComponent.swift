@@ -9,17 +9,17 @@ import SwiftUI
 
 struct PortfolioCryptoComponent: View {
         
-    let isHidedBalance : Bool
+    @StateObject var viewModel : PortfolioViewModel
     
     var body: some View {
         VStack{
-            ForEach(Tokens.list,id: \.self){ token in
+            ForEach(viewModel.portfolio.filter{ $0.network == viewModel.networkSubject.value },id: \.self){ token in
                 NavigationLink {
                     TokenView(token: token)
                 } label: {
                     PortfolioCryptoItemComponent(
                         token: token,
-                        isHidedBalance:isHidedBalance
+                        isHidedBalance: viewModel.isHidedBalance
                     )
                 }
             }
@@ -32,7 +32,7 @@ struct PortfolioCryptoComponent: View {
 #Preview {
     GeometryReader(content: { geometry in
         PortfolioCryptoComponent(
-            isHidedBalance: .random()
+            viewModel: PortfolioViewModel()
         )
     })
 }

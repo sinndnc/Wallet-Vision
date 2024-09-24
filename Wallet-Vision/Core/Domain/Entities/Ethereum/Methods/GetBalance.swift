@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BigInt
 
 struct GetBalance : Encodable{
     let from : String

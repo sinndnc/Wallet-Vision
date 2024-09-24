@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import BigInt
 
 struct PortfolioView: View {
     
-    @StateObject var viewModel : PortfolioViewModel
+    @StateObject var viewModel : PortfolioViewModel = PortfolioViewModel()
     
     var body: some View {
         NavigationStack{
@@ -34,16 +35,21 @@ struct PortfolioView: View {
             .toolbar{
                 ToolbarItem(placement: .principal) {
                     ButtonWithHapticFeedback {
-                        
+                        if(viewModel.networkSubject.value == MainNetworks.ethereum){
+                            viewModel.updateNetworkChannel(for: TestNetworks.sepolia)
+                        }else{
+                            viewModel.updateNetworkChannel(for: MainNetworks.ethereum)
+                        }
                     } label: {
+                        Text("Switch")
                     }
                 }
             }
         }
-        .task {
-            await  viewModel.fetchTransactions()
-            await viewModel.sendTransfer()
-            await viewModel.getWalletBalance()
+        .onAppear{
+            viewModel.fetchData()
+//            await viewModel.getBalance(of: "0xd7cd47a36e52772a068b13d59bcc80ede4e8d3bf")
+//            await viewModel.getPortfolio(of: "0xd7cd47a36e52772a068b13d59bcc80ede4e8d3bf")
         }
     }
 }
@@ -69,5 +75,5 @@ fileprivate extension View {
 
 
 #Preview {
-    PortfolioView(viewModel: PortfolioViewModel())
+    PortfolioView()
 }

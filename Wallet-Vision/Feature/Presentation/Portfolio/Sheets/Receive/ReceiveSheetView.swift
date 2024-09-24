@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ReceiveSheetView: View {
-    
    
     @State private var isPresented : Bool = false
-    @State private var selectedNetwork : Network = .allNetworks
+    
+    @StateObject var viewModel : PortfolioViewModel
     @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
@@ -32,7 +32,7 @@ struct ReceiveSheetView: View {
                 }
                 .tint(.white)
                 ScrollView{
-                    ForEach(Tokens.list,id: \.self){ token in
+                    ForEach(ERCTokens.allCases,id: \.self){ token in
                         SendItemComponent(token: token)
                     }
                 }
@@ -54,12 +54,12 @@ struct ReceiveSheetView: View {
             }
             .searchable(text: .constant(""))
             .sheet(isPresented: $isPresented, content: {
-                NetworkSheetView(selectedNetwork: $selectedNetwork)
+                NetworkSheetView(viewModel: viewModel)
             })
         }
     }
 }
 
 #Preview {
-    ReceiveSheetView()
+    ReceiveSheetView(viewModel: PortfolioViewModel())
 }

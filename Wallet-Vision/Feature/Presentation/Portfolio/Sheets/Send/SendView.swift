@@ -99,6 +99,6 @@ struct SendView: View {
 
 #Preview {
     NavigationStack{
-        SendView(token: Token(name: "USDT", symbol: "USDT"))
+        SendView(token: Token(name: "ETH", network: MainNetworks.ethereum, decimals: 18, symbol: "ETH", contractAddress: ""))
     }
 }

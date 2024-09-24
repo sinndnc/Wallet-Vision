@@ -44,7 +44,7 @@ struct SendItemComponent: View {
                         .fontWeight(.semibold)
                         .foregroundStyle(.gray)
                     Spacer()
-                    Text("$26.352.29")
+                    Text(String(token.totalSupply))
                         .font(.caption)
                         .fontWeight(.semibold)
                         .foregroundStyle(.gray)
@@ -56,5 +56,5 @@ struct SendItemComponent: View {
 }
 
 #Preview {
-    SendItemComponent(token: Token(name: "ETH", symbol: "ETH"))
+    SendItemComponent(token: Token(name: "ETH", network: MainNetworks.ethereum, decimals: 18, symbol: "ETH", contractAddress: ""))
 }

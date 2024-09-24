@@ -10,8 +10,9 @@ import SwiftUI
 struct SendSheetView: View {
     
     @State private var isPresented : Bool = false
-    @State private var selectedNetwork : Network = .allNetworks
-    @Environment(\.presentationMode) var presentationMode
+    
+    @StateObject var viewModel : PortfolioViewModel
+    @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
         NavigationStack{
@@ -20,18 +21,19 @@ struct SendSheetView: View {
                     isPresented.toggle()
                 } label: {
                     HStack{
-                        Text(selectedNetwork.rawValue)
+                        Text(viewModel.networkSubject.value.name)
                             .font(.subheadline)
                             .fontWeight(.semibold)
                         Image(systemName: "chevron.down")
                             .font(.caption)
                             .fontWeight(.semibold)
+                        Spacer()
                     }
                     .padding(.bottom)
                 }
                 .tint(.white)
                 ScrollView{
-                    ForEach(Tokens.list,id: \.self){ token in
+                    ForEach(ERCTokens.allCases.filter{ $0.network == viewModel.networkSubject.value },id: \.self){ token in
                         NavigationLink {
                             SendView(token: token)
                         } label: {
@@ -58,12 +60,12 @@ struct SendSheetView: View {
             }
             .searchable(text: .constant(""))
             .sheet(isPresented: $isPresented, content: {
-                NetworkSheetView(selectedNetwork: $selectedNetwork)
+                NetworkSheetView(viewModel: viewModel)
             })
         }
     }
 }
 
 #Preview {
-    SendSheetView()
+    SendSheetView(viewModel: PortfolioViewModel())
 }

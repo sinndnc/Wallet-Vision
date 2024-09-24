@@ -10,7 +10,7 @@ import SwiftUI
 struct WalletComponent: View {
     
     let baseGeo : GeometryProxy
-    @StateObject var viewModel : PortfolioViewModel
+    @ObservedObject var viewModel : PortfolioViewModel
     
     var body: some View {
         GeometryReader{ childGeo in

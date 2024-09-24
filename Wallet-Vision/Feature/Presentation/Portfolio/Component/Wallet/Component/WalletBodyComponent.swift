@@ -24,8 +24,8 @@ fileprivate struct Option : Identifiable{
 struct WalletBodyComponent: View {
     
     let childGeo : GeometryProxy
-    @StateObject var viewModel : PortfolioViewModel   
-
+    @StateObject var viewModel : PortfolioViewModel
+    
     @State private var selectedSheet : Option?
     @State private var options : [Option] = [
         Option(image: "arrow.up", label: "Send", option: .send),
@@ -37,13 +37,11 @@ struct WalletBodyComponent: View {
     var body: some View {
         VStack{
             HStack{
-                if let balance = viewModel.balances.first{
-                    Text("$\(balance.balance)")
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .blur(radius: viewModel.isHidedBalance ? 6 : 0)
-                    Spacer()
-                }
+                Text("$" + String(viewModel.balance))
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .blur(radius: viewModel.isHidedBalance ? 6 : 0)
+                Spacer()
             }
             HStack{
                 ForEach(options){ option in
@@ -75,13 +73,13 @@ struct WalletBodyComponent: View {
         .sheet(item: $selectedSheet) { selected in
             switch selected.option {
             case .send:
-                SendSheetView()
+                SendSheetView(viewModel: viewModel)
             case .swap:
                 SwapSheetView()
             case .receive:
-                ReceiveSheetView()
+                ReceiveSheetView(viewModel: viewModel)
             case .transaction:
-                TransactionSheetView()
+                TransactionSheetView(viewModel: viewModel)
             }
         }
     }

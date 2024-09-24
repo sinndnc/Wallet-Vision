@@ -8,7 +8,7 @@
 import Foundation
 import BigInt
 
-struct EstimateGasRequest : Encodable{
+struct EstimateGasRequest : Encodable {
     let to: String
     let from : String
     let value : String

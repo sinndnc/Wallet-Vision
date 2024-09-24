@@ -45,7 +45,7 @@ func generateDailyChartData(forLastMonths months: Int) -> [ChartGraphic] {
 
 struct ChartGraphicComponent: View {
     
-    let token : Token
+    let token : TokenUI
     let baseGeo : GeometryProxy
     
     @State private var selectedPrice: ChartGraphic?
@@ -264,7 +264,7 @@ struct ChartGraphicComponent: View {
 #Preview {
     GeometryReader(content: { geometry in
         ChartGraphicComponent(
-            token: Token(name: "BNB Chain", symbol: "BNB", contractAddress: ""), 
+            token: TokenUI(name: "ETH", symbol: "", network: TestNetworks.sepolia, longName: "", value: .zero, amount: .zero, UnitPrice: .zero), 
             baseGeo: geometry
         )
     })

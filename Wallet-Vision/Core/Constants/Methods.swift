@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Method : String {
+enum Methods : String {
     
     case call = "eth_call"
     case gasPrice = "eth_gasPrice"

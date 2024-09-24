@@ -26,23 +26,31 @@
 		991A5A912C836F7A004ED642 /* TokenExchangeItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A5A902C836F7A004ED642 /* TokenExchangeItemComponent.swift */; };
 		991A5A942C8374B8004ED642 /* TokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A5A932C8374B8004ED642 /* TokenView.swift */; };
 		9920A9B72C8A40E50003DE92 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9B62C8A40E50003DE92 /* Token.swift */; };
-		9920A9BB2C8A43BC0003DE92 /* EthereumRPCProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9BA2C8A43BC0003DE92 /* EthereumRPCProvider.swift */; };
-		9920A9BD2C8A43D30003DE92 /* EthereumRPCProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9BC2C8A43D30003DE92 /* EthereumRPCProviderProtocol.swift */; };
+		9920A9BB2C8A43BC0003DE92 /* InfuraRPCProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9BA2C8A43BC0003DE92 /* InfuraRPCProvider.swift */; };
+		9920A9BD2C8A43D30003DE92 /* InfuraRPCProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9BC2C8A43D30003DE92 /* InfuraRPCProviderProtocol.swift */; };
 		9920A9C32C8A4D9D0003DE92 /* EthereumSingleKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9C22C8A4D9D0003DE92 /* EthereumSingleKeyStorage.swift */; };
-		9920A9CB2C8DB6060003DE92 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9CA2C8DB6060003DE92 /* Tokens.swift */; };
+		9920A9CB2C8DB6060003DE92 /* ERCTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9CA2C8DB6060003DE92 /* ERCTokens.swift */; };
 		9920A9CF2C8DC6480003DE92 /* EthereumProviderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9CE2C8DC6480003DE92 /* EthereumProviderRepository.swift */; };
-		9920A9D12C8DC6600003DE92 /* EthereumProviderRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9D02C8DC6600003DE92 /* EthereumProviderRepositoryProtocol.swift */; };
 		9920A9D32C8E1CCB0003DE92 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9D22C8E1CCB0003DE92 /* Network.swift */; };
 		9920A9D52C8E1D940003DE92 /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920A9D42C8E1D940003DE92 /* SendView.swift */; };
 		993675BF2C8F646600B508CC /* SendConformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993675BE2C8F646600B508CC /* SendConformationView.swift */; };
 		993675C12C8F6CF300B508CC /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993675C02C8F6CF300B508CC /* KeychainManager.swift */; };
 		993675C52C8F6E8100B508CC /* PBKDF2Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993675C42C8F6E8100B508CC /* PBKDF2Manager.swift */; };
-		993675C72C905D1C00B508CC /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993675C62C905D1C00B508CC /* Method.swift */; };
+		993675C72C905D1C00B508CC /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993675C62C905D1C00B508CC /* Methods.swift */; };
 		993675C92C905DAA00B508CC /* EthereumNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993675C82C905DAA00B508CC /* EthereumNetworkProvider.swift */; };
 		993675CB2C905FAC00B508CC /* EthereumNetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993675CA2C905FAC00B508CC /* EthereumNetworkProviderProtocol.swift */; };
 		993675CD2C9240ED00B508CC /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993675CC2C9240ED00B508CC /* Chain.swift */; };
 		993675CF2C924DBB00B508CC /* EthereumClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993675CE2C924DBB00B508CC /* EthereumClientError.swift */; };
 		994543FE2C8637CE002558D2 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994543FD2C8637CE002558D2 /* Date+Extension.swift */; };
+		9953B15D2C97903C00200C85 /* EthereumProviderRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953B15C2C97903C00200C85 /* EthereumProviderRepositoryProtocol.swift */; };
+		9953B15F2C9790A500200C85 /* TokenApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953B15E2C9790A500200C85 /* TokenApiProvider.swift */; };
+		9953B1622C9790D000200C85 /* TokenApiProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953B1612C9790D000200C85 /* TokenApiProviderProtocol.swift */; };
+		9953B1642C98595100200C85 /* Token+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953B1632C98595100200C85 /* Token+Extension.swift */; };
+		9953B1662C9A11DB00200C85 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953B1652C9A11DB00200C85 /* String+Extension.swift */; };
+		9953B1702C9AEECD00200C85 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953B16F2C9AEECD00200C85 /* UserDefaults+Extension.swift */; };
+		9953B1722C9B077D00200C85 /* MainNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953B1712C9B077D00200C85 /* MainNetworks.swift */; };
+		9953B1742C9B242B00200C85 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953B1732C9B242B00200C85 /* Data+Extension.swift */; };
+		9953B1772C9B38A600200C85 /* TestNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953B1762C9B38A600200C85 /* TestNetworks.swift */; };
 		996EC4CA2C6E2404008A75EA /* WalletVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EC4C92C6E2404008A75EA /* WalletVisionApp.swift */; };
 		996EC4CE2C6E2406008A75EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996EC4CD2C6E2406008A75EA /* Assets.xcassets */; };
 		996EC4D12C6E2406008A75EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996EC4D02C6E2406008A75EA /* Preview Assets.xcassets */; };
@@ -59,6 +67,10 @@
 		99754AA02C80714F00AC5B7E /* ReceiveSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99754A9F2C80714F00AC5B7E /* ReceiveSheetView.swift */; };
 		997F6F992C78EA5B00F11339 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F6F982C78EA5B00F11339 /* SettingsView.swift */; };
 		997F6F9B2C78EA6A00F11339 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F6F9A2C78EA6A00F11339 /* SettingsViewModel.swift */; };
+		998714C22C96FD85008742D1 /* BigUInt+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998714C12C96FD85008742D1 /* BigUInt+Extension.swift */; };
+		998714C52C9701C7008742D1 /* Decimals+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998714C42C9701C7008742D1 /* Decimals+Extension.swift */; };
+		998714C92C970D26008742D1 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998714C82C970D26008742D1 /* Double+Extension.swift */; };
+		998714CC2C970EC9008742D1 /* TokenUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998714CB2C970EC9008742D1 /* TokenUI.swift */; };
 		99AB07512C70BF4A00936B1C /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB07502C70BF4A00936B1C /* BrowserView.swift */; };
 		99AB07532C70BF5700936B1C /* BrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB07522C70BF5700936B1C /* BrowserViewModel.swift */; };
 		99AB07602C71359A00936B1C /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB075F2C71359A00936B1C /* View+Extension.swift */; };
@@ -135,23 +147,31 @@
 		991A5A902C836F7A004ED642 /* TokenExchangeItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenExchangeItemComponent.swift; sourceTree = "<group>"; };
 		991A5A932C8374B8004ED642 /* TokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenView.swift; sourceTree = "<group>"; };
 		9920A9B62C8A40E50003DE92 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
-		9920A9BA2C8A43BC0003DE92 /* EthereumRPCProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumRPCProvider.swift; sourceTree = "<group>"; };
-		9920A9BC2C8A43D30003DE92 /* EthereumRPCProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumRPCProviderProtocol.swift; sourceTree = "<group>"; };
+		9920A9BA2C8A43BC0003DE92 /* InfuraRPCProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfuraRPCProvider.swift; sourceTree = "<group>"; };
+		9920A9BC2C8A43D30003DE92 /* InfuraRPCProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfuraRPCProviderProtocol.swift; sourceTree = "<group>"; };
 		9920A9C22C8A4D9D0003DE92 /* EthereumSingleKeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumSingleKeyStorage.swift; sourceTree = "<group>"; };
-		9920A9CA2C8DB6060003DE92 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		9920A9CA2C8DB6060003DE92 /* ERCTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCTokens.swift; sourceTree = "<group>"; };
 		9920A9CE2C8DC6480003DE92 /* EthereumProviderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumProviderRepository.swift; sourceTree = "<group>"; };
-		9920A9D02C8DC6600003DE92 /* EthereumProviderRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumProviderRepositoryProtocol.swift; sourceTree = "<group>"; };
 		9920A9D22C8E1CCB0003DE92 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		9920A9D42C8E1D940003DE92 /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		993675BE2C8F646600B508CC /* SendConformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendConformationView.swift; sourceTree = "<group>"; };
 		993675C02C8F6CF300B508CC /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		993675C42C8F6E8100B508CC /* PBKDF2Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBKDF2Manager.swift; sourceTree = "<group>"; };
-		993675C62C905D1C00B508CC /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		993675C62C905D1C00B508CC /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
 		993675C82C905DAA00B508CC /* EthereumNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumNetworkProvider.swift; sourceTree = "<group>"; };
 		993675CA2C905FAC00B508CC /* EthereumNetworkProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumNetworkProviderProtocol.swift; sourceTree = "<group>"; };
 		993675CC2C9240ED00B508CC /* Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
 		993675CE2C924DBB00B508CC /* EthereumClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumClientError.swift; sourceTree = "<group>"; };
 		994543FD2C8637CE002558D2 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		9953B15C2C97903C00200C85 /* EthereumProviderRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumProviderRepositoryProtocol.swift; sourceTree = "<group>"; };
+		9953B15E2C9790A500200C85 /* TokenApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenApiProvider.swift; sourceTree = "<group>"; };
+		9953B1612C9790D000200C85 /* TokenApiProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenApiProviderProtocol.swift; sourceTree = "<group>"; };
+		9953B1632C98595100200C85 /* Token+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Token+Extension.swift"; sourceTree = "<group>"; };
+		9953B1652C9A11DB00200C85 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		9953B16F2C9AEECD00200C85 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		9953B1712C9B077D00200C85 /* MainNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworks.swift; sourceTree = "<group>"; };
+		9953B1732C9B242B00200C85 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		9953B1762C9B38A600200C85 /* TestNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworks.swift; sourceTree = "<group>"; };
 		996EC4C62C6E2404008A75EA /* Wallet-Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallet-Vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996EC4C92C6E2404008A75EA /* WalletVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVisionApp.swift; sourceTree = "<group>"; };
 		996EC4CD2C6E2406008A75EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -172,6 +192,10 @@
 		99754A9F2C80714F00AC5B7E /* ReceiveSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveSheetView.swift; sourceTree = "<group>"; };
 		997F6F982C78EA5B00F11339 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		997F6F9A2C78EA6A00F11339 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		998714C12C96FD85008742D1 /* BigUInt+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BigUInt+Extension.swift"; sourceTree = "<group>"; };
+		998714C42C9701C7008742D1 /* Decimals+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimals+Extension.swift"; sourceTree = "<group>"; };
+		998714C82C970D26008742D1 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		998714CB2C970EC9008742D1 /* TokenUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenUI.swift; sourceTree = "<group>"; };
 		99AB07502C70BF4A00936B1C /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
 		99AB07522C70BF5700936B1C /* BrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
 		99AB075F2C71359A00936B1C /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -349,12 +373,12 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
-		991A5A892C836993004ED642 /* transaction */ = {
+		991A5A892C836993004ED642 /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
 				99E64CB82C81E5A6004AD1CD /* TransactionSheetView.swift */,
 			);
-			path = transaction;
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 		991A5A8E2C836F58004ED642 /* Token */ = {
@@ -377,9 +401,9 @@
 		9920A9B82C8A43A80003DE92 /* Ethereum */ = {
 			isa = PBXGroup;
 			children = (
-				9920A9C12C8A4D6F0003DE92 /* KeyStorage */,
-				9920A9BA2C8A43BC0003DE92 /* EthereumRPCProvider.swift */,
-				993675C82C905DAA00B508CC /* EthereumNetworkProvider.swift */,
+				998714C32C96FF5C008742D1 /* Network */,
+				9953B15E2C9790A500200C85 /* TokenApiProvider.swift */,
+				9920A9BA2C8A43BC0003DE92 /* InfuraRPCProvider.swift */,
 				99AD99212C95E993006F190D /* EtherscanNetworkProvider.swift */,
 			);
 			path = Ethereum;
@@ -388,9 +412,10 @@
 		9920A9B92C8A43B10003DE92 /* Ethereum */ = {
 			isa = PBXGroup;
 			children = (
-				9920A9BC2C8A43D30003DE92 /* EthereumRPCProviderProtocol.swift */,
+				9953B1602C9790C600200C85 /* Network */,
+				9953B1612C9790D000200C85 /* TokenApiProviderProtocol.swift */,
+				9920A9BC2C8A43D30003DE92 /* InfuraRPCProviderProtocol.swift */,
 				993675CA2C905FAC00B508CC /* EthereumNetworkProviderProtocol.swift */,
-				99AD99282C95ED94006F190D /* EtherscanNetworkProviderProtocol.swift */,
 			);
 			path = Ethereum;
 			sourceTree = "<group>";
@@ -398,6 +423,7 @@
 		9920A9BE2C8A4A840003DE92 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				998714CA2C970EBF008742D1 /* Token */,
 				9920A9C72C8C53260003DE92 /* Ethereum */,
 			);
 			path = Entities;
@@ -417,11 +443,10 @@
 			isa = PBXGroup;
 			children = (
 				99AD99232C95EC7C006F190D /* Error */,
-				99AD99102C9455A8006F190D /* Json */,
+				99AD99102C9455A8006F190D /* JSON */,
 				99AD99132C94E2CB006F190D /* Methods */,
 				99AD991E2C95E8C6006F190D /* Transaction */,
 				993675CC2C9240ED00B508CC /* Chain.swift */,
-				9920A9B62C8A40E50003DE92 /* Token.swift */,
 				99AD99162C95D77F006F190D /* Block.swift */,
 				9920A9D22C8E1CCB0003DE92 /* Network.swift */,
 			);
@@ -431,17 +456,73 @@
 		9920A9CC2C8DC61F0003DE92 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				9920A9CE2C8DC6480003DE92 /* EthereumProviderRepository.swift */,
+				9953B1692C9ADC9600200C85 /* Tron */,
+				9953B1682C9ADC9100200C85 /* Ethereum */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		9920A9CD2C8DC62C0003DE92 /* Repository */ = {
+		9953B15B2C97901600200C85 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				9920A9D02C8DC6600003DE92 /* EthereumProviderRepositoryProtocol.swift */,
+				9953B16B2C9ADCB100200C85 /* Tron */,
+				9953B16A2C9ADCAC00200C85 /* Ethereum */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		9953B1602C9790C600200C85 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				99AD99282C95ED94006F190D /* EtherscanNetworkProviderProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9953B1672C9ADC7800200C85 /* Tron */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tron;
+			sourceTree = "<group>";
+		};
+		9953B1682C9ADC9100200C85 /* Ethereum */ = {
+			isa = PBXGroup;
+			children = (
+				9920A9CE2C8DC6480003DE92 /* EthereumProviderRepository.swift */,
+			);
+			path = Ethereum;
+			sourceTree = "<group>";
+		};
+		9953B1692C9ADC9600200C85 /* Tron */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tron;
+			sourceTree = "<group>";
+		};
+		9953B16A2C9ADCAC00200C85 /* Ethereum */ = {
+			isa = PBXGroup;
+			children = (
+				9953B15C2C97903C00200C85 /* EthereumProviderRepositoryProtocol.swift */,
+			);
+			path = Ethereum;
+			sourceTree = "<group>";
+		};
+		9953B16B2C9ADCB100200C85 /* Tron */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tron;
+			sourceTree = "<group>";
+		};
+		9953B1752C9B386800200C85 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				9953B1762C9B38A600200C85 /* TestNetworks.swift */,
+				9953B1712C9B077D00200C85 /* MainNetworks.swift */,
+			);
+			path = Networks;
 			sourceTree = "<group>";
 		};
 		996EC4BD2C6E2404008A75EA = {
@@ -593,7 +674,7 @@
 			children = (
 				9920A9BE2C8A4A840003DE92 /* Entities */,
 				99AB076A2C71F23D00936B1C /* Remote */,
-				9920A9CD2C8DC62C0003DE92 /* Repository */,
+				9953B15B2C97901600200C85 /* Repository */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -604,6 +685,7 @@
 				991868342C6E4CA10029B128 /* QR */,
 				991868332C6E4C9E0029B128 /* NFC */,
 				99F3F4E42C6E5F4B00AEF445 /* FaceID */,
+				9920A9C12C8A4D6F0003DE92 /* KeyStorage */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -611,7 +693,9 @@
 		996EC4FE2C6E24F4008A75EA /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				9920A9CA2C8DB6060003DE92 /* Tokens.swift */,
+				9953B1752C9B386800200C85 /* Networks */,
+				9920A9CA2C8DB6060003DE92 /* ERCTokens.swift */,
+				993675C62C905D1C00B508CC /* Methods.swift */,
 				99D2ED2B2C6FA2E90066E137 /* Preferences.swift */,
 			);
 			path = Constants;
@@ -620,6 +704,13 @@
 		996EC4FF2C6E2503008A75EA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9953B1732C9B242B00200C85 /* Data+Extension.swift */,
+				9953B1652C9A11DB00200C85 /* String+Extension.swift */,
+				9953B1632C98595100200C85 /* Token+Extension.swift */,
+				998714C82C970D26008742D1 /* Double+Extension.swift */,
+				998714C12C96FD85008742D1 /* BigUInt+Extension.swift */,
+				998714C42C9701C7008742D1 /* Decimals+Extension.swift */,
+				9953B16F2C9AEECD00200C85 /* UserDefaults+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -684,7 +775,7 @@
 				991A5A782C830639004ED642 /* Send */,
 				991A5A822C830BB9004ED642 /* Receive */,
 				991A5A832C83603C004ED642 /* Swap */,
-				991A5A892C836993004ED642 /* transaction */,
+				991A5A892C836993004ED642 /* Transaction */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -696,6 +787,30 @@
 				997F6F9A2C78EA6A00F11339 /* SettingsViewModel.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		998714C32C96FF5C008742D1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				993675C82C905DAA00B508CC /* EthereumNetworkProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		998714CA2C970EBF008742D1 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				9920A9B62C8A40E50003DE92 /* Token.swift */,
+				998714CB2C970EC9008742D1 /* TokenUI.swift */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+		9995E0B92C9DE2270083BD45 /* Publisher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Publisher;
 			sourceTree = "<group>";
 		};
 		99AB074F2C70BF3400936B1C /* Browser */ = {
@@ -723,26 +838,12 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
-		99AB07672C71F22500936B1C /* Wallet */ = {
-			isa = PBXGroup;
-			children = (
-				9920A9B82C8A43A80003DE92 /* Ethereum */,
-			);
-			path = Wallet;
-			sourceTree = "<group>";
-		};
-		99AB07682C71F23000936B1C /* Wallet */ = {
-			isa = PBXGroup;
-			children = (
-				9920A9B92C8A43B10003DE92 /* Ethereum */,
-			);
-			path = Wallet;
-			sourceTree = "<group>";
-		};
 		99AB07692C71F23700936B1C /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				99AB07672C71F22500936B1C /* Wallet */,
+				9995E0B92C9DE2270083BD45 /* Publisher */,
+				9953B1672C9ADC7800200C85 /* Tron */,
+				9920A9B82C8A43A80003DE92 /* Ethereum */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -750,27 +851,26 @@
 		99AB076A2C71F23D00936B1C /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				99AB07682C71F23000936B1C /* Wallet */,
+				9920A9B92C8A43B10003DE92 /* Ethereum */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
 		};
-		99AD99102C9455A8006F190D /* Json */ = {
+		99AD99102C9455A8006F190D /* JSON */ = {
 			isa = PBXGroup;
 			children = (
 				99AD99112C9455B2006F190D /* JSONRPCs.swift */,
 			);
-			path = Json;
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		99AD99132C94E2CB006F190D /* Methods */ = {
 			isa = PBXGroup;
 			children = (
-				993675C62C905D1C00B508CC /* Method.swift */,
 				99AD99142C94E2F1006F190D /* Call.swift */,
+				99AD991C2C95E211006F190D /* GetBalance.swift */,
 				99AD99182C95D8A4006F190D /* EstimateGas.swift */,
 				99AD991A2C95DF89006F190D /* GetTransactionCount.swift */,
-				99AD991C2C95E211006F190D /* GetBalance.swift */,
 			);
 			path = Methods;
 			sourceTree = "<group>";
@@ -1039,18 +1139,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				993675CD2C9240ED00B508CC /* Chain.swift in Sources */,
+				9953B1702C9AEECD00200C85 /* UserDefaults+Extension.swift in Sources */,
 				991A5A8D2C836BF0004ED642 /* NFTExchangeComponent.swift in Sources */,
 				993675C92C905DAA00B508CC /* EthereumNetworkProvider.swift in Sources */,
+				9953B1772C9B38A600200C85 /* TestNetworks.swift in Sources */,
 				996EC5052C6E4712008A75EA /* SplashView.swift in Sources */,
 				993675C52C8F6E8100B508CC /* PBKDF2Manager.swift in Sources */,
 				9918683A2C6E4CEC0029B128 /* DIPropertyWrapper.swift in Sources */,
 				991A5A882C83679B004ED642 /* SwapTokenButtonComponent.swift in Sources */,
+				9953B1722C9B077D00200C85 /* MainNetworks.swift in Sources */,
+				9953B1642C98595100200C85 /* Token+Extension.swift in Sources */,
 				99AB07512C70BF4A00936B1C /* BrowserView.swift in Sources */,
 				99754AA02C80714F00AC5B7E /* ReceiveSheetView.swift in Sources */,
 				99AD99122C9455B2006F190D /* JSONRPCs.swift in Sources */,
 				99AD99152C94E2F1006F190D /* Call.swift in Sources */,
+				9953B15D2C97903C00200C85 /* EthereumProviderRepositoryProtocol.swift in Sources */,
 				99D2ED3C2C6FDF2D0066E137 /* PortfolioNFTComponent.swift in Sources */,
-				993675C72C905D1C00B508CC /* Method.swift in Sources */,
+				993675C72C905D1C00B508CC /* Methods.swift in Sources */,
 				991868422C6E4F050029B128 /* RootViewModel.swift in Sources */,
 				99F3F4EA2C6E704600AEF445 /* SplashViewModel.swift in Sources */,
 				99AD99192C95D8A4006F190D /* EstimateGas.swift in Sources */,
@@ -1061,6 +1166,7 @@
 				9920A9CF2C8DC6480003DE92 /* EthereumProviderRepository.swift in Sources */,
 				996EC5122C6E49E2008A75EA /* HomeView.swift in Sources */,
 				996EC4CA2C6E2404008A75EA /* WalletVisionApp.swift in Sources */,
+				9953B1742C9B242B00200C85 /* Data+Extension.swift in Sources */,
 				991A5A942C8374B8004ED642 /* TokenView.swift in Sources */,
 				997F6F9B2C78EA6A00F11339 /* SettingsViewModel.swift in Sources */,
 				99AB07602C71359A00936B1C /* View+Extension.swift in Sources */,
@@ -1079,16 +1185,21 @@
 				99AD99202C95E8F2006F190D /* Transaction.swift in Sources */,
 				996EC5082C6E4735008A75EA /* WalletVisionAppDelegate.swift in Sources */,
 				99754A9E2C80713B00AC5B7E /* SendSheetView.swift in Sources */,
-				9920A9CB2C8DB6060003DE92 /* Tokens.swift in Sources */,
+				9920A9CB2C8DB6060003DE92 /* ERCTokens.swift in Sources */,
 				991A5A7B2C830650004ED642 /* SendNetworkItemComponent.swift in Sources */,
 				991868452C6E4F8E0029B128 /* HomeViewModel.swift in Sources */,
 				99AB07662C71F0AC00936B1C /* ButtonWithHapticFeedback.swift in Sources */,
 				996EC50B2C6E487C008A75EA /* RootView.swift in Sources */,
 				99D2ED242C6F9AA20066E137 /* CreditCardComponent.swift in Sources */,
+				9953B1622C9790D000200C85 /* TokenApiProviderProtocol.swift in Sources */,
 				99F3F4E62C6E601300AEF445 /* FaceIDService.swift in Sources */,
+				998714C22C96FD85008742D1 /* BigUInt+Extension.swift in Sources */,
 				991868402C6E4E020029B128 /* NFCServiceProtocol.swift in Sources */,
+				998714C92C970D26008742D1 /* Double+Extension.swift in Sources */,
+				998714CC2C970EC9008742D1 /* TokenUI.swift in Sources */,
 				99AD99252C95ECAD006F190D /* EthereumNetworkError.swift in Sources */,
 				991A5A8B2C836BD3004ED642 /* TokenExchangeComponent.swift in Sources */,
+				9953B15F2C9790A500200C85 /* TokenApiProvider.swift in Sources */,
 				99AB07532C70BF5700936B1C /* BrowserViewModel.swift in Sources */,
 				997F6F992C78EA5B00F11339 /* SettingsView.swift in Sources */,
 				991868472C6E4FA30029B128 /* PortfolioViewModel.swift in Sources */,
@@ -1102,22 +1213,23 @@
 				9920A9B72C8A40E50003DE92 /* Token.swift in Sources */,
 				99D2ED2C2C6FA2E90066E137 /* Preferences.swift in Sources */,
 				99D2ED2A2C6F9EB20066E137 /* CreditCardBodyComponent.swift in Sources */,
+				9953B1662C9A11DB00200C85 /* String+Extension.swift in Sources */,
 				99D2ED2E2C6FA9B70066E137 /* CreditCardBottomComponent.swift in Sources */,
 				996EC5102C6E49D8008A75EA /* PortfolioView.swift in Sources */,
 				9920A9D52C8E1D940003DE92 /* SendView.swift in Sources */,
-				9920A9D12C8DC6600003DE92 /* EthereumProviderRepositoryProtocol.swift in Sources */,
 				99D2ED392C6FD8BF0066E137 /* PortfolioCryptoItemComponent.swift in Sources */,
 				993675CB2C905FAC00B508CC /* EthereumNetworkProviderProtocol.swift in Sources */,
 				99AD99272C95ECE5006F190D /* EthereumJsonError.swift in Sources */,
 				99E64CBB2C81E9CF004AD1CD /* SwapSheetView.swift in Sources */,
-				9920A9BB2C8A43BC0003DE92 /* EthereumRPCProvider.swift in Sources */,
+				9920A9BB2C8A43BC0003DE92 /* InfuraRPCProvider.swift in Sources */,
 				99D2ED3E2C6FE02B0066E137 /* PortfolioNFTItemComponent.swift in Sources */,
 				99AD99172C95D77F006F190D /* Block.swift in Sources */,
 				993675BF2C8F646600B508CC /* SendConformationView.swift in Sources */,
 				991453E92C8481CA003E14A3 /* ChartGraphicComponent.swift in Sources */,
+				998714C52C9701C7008742D1 /* Decimals+Extension.swift in Sources */,
 				99DBA8662C7A29B700451E79 /* CardViewModel.swift in Sources */,
 				99AD99222C95E993006F190D /* EtherscanNetworkProvider.swift in Sources */,
-				9920A9BD2C8A43D30003DE92 /* EthereumRPCProviderProtocol.swift in Sources */,
+				9920A9BD2C8A43D30003DE92 /* InfuraRPCProviderProtocol.swift in Sources */,
 				99DBA8682C7A29BF00451E79 /* CardView.swift in Sources */,
 				991A5A7D2C830669004ED642 /* SendItemComponent.swift in Sources */,
 				9918683E2C6E4D430029B128 /* DIInjectContainer.swift in Sources */,

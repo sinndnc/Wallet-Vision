@@ -9,13 +9,13 @@ import SwiftUI
 
 struct NetworkSheetView: View {
     
-    @Binding var selectedNetwork : Network
-    @Environment(\.presentationMode) var presentationMode
-    
+    @StateObject var viewModel : PortfolioViewModel
+    @Environment(\.presentationMode) private var presentationMode
+
     var body: some View {
         NavigationStack{
             ScrollView{
-                SendNetworkItemComponent(selectedNetwork: $selectedNetwork)
+                SendNetworkItemComponent(viewModel: viewModel)
             }
             .padding()
             .navigationTitle("Networks")
@@ -39,5 +39,5 @@ struct NetworkSheetView: View {
 }
 
 #Preview {
-    NetworkSheetView(selectedNetwork: .constant(.allNetworks))
+    NetworkSheetView(viewModel: PortfolioViewModel())
 }
